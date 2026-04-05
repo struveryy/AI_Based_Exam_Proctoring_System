@@ -1,0 +1,12 @@
+{
+    "name": "anubhaw",
+    "roll_no": "N/A",
+    "time": "2026-04-05 23:43:37",
+    "violations": [
+        "cell phone"
+    ],
+    "warnings": 3,
+    "evidence_image": "data/evidence/images/anubhaw_20260405_234337.jpg",
+    "evidence_video": "data/evidence/clips/anubhaw_20260405_234337.avi",
+    "status": "Approved"
+}

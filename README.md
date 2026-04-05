@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# AI-Based-Exam-Proctoring-System
-The AI-Based Exam Proctoring System is a web-based application that ensures fairness in online examinations. It uses webcam-based face detection and browser activity monitoring to detect suspicious behavior. Violations are logged with evidence, and a final proctoring report is generated for examiner evaluation.
-=======
 # 🎓 AI Exam Proctoring System
 
 An AI-powered proctoring system that monitors students during exams
@@ -51,8 +47,16 @@ Open: http://127.0.0.1:5000
 -   Videos → data/evidence/clips/
 
 ------------------------------------------------------------------------
-
+🧪 How It Works
+Camera captures live video
+YOLO detects objects (phone/book)
+DeepSORT tracks students
+Face recognition identifies student
+Head pose detects looking direction
+Warning system triggers
+After 3 violations → UFM generated
+Evidence (image + video) saved
+------------------------------------------------------------------------
 ## 👨‍💻 Author
 
-Ansh Vaish
->>>>>>> a0514842 (intial commit)
+Anubhaw vaish
