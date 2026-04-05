@@ -1,0 +1,12 @@
+{
+    "name": "anubhaw",
+    "roll_no": "N/A",
+    "time": "2026-04-05 18:21:37",
+    "violations": [
+        "looking_left"
+    ],
+    "warnings": 3,
+    "evidence_image": "data/evidence/images/anubhaw_20260405_182136.jpg",
+    "evidence_video": "data/evidence/clips/anubhaw_20260405_182136.avi",
+    "status": "Pending"
+}

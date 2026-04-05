@@ -1,0 +1,63 @@
+# ==============================
+# 🎥 CAMERA CONFIGURATION
+# ==============================
+# 0 = webcam, RTSP URL for CCTV
+CAMERA_SOURCE=0
+
+
+# ==============================
+# 🤖 MODEL CONFIGURATION
+# ==============================
+MODEL_PATH=yolov8n.pt
+
+# Confidence threshold for detection (0–1)
+CONFIDENCE_THRESHOLD=0.5
+
+
+# ==============================
+# ⚙️ SYSTEM SETTINGS
+# ==============================
+# Time (seconds) between warnings
+COOLDOWN=5
+
+# Frame rate for video recording
+FPS=20
+
+# Seconds of video to store before UFM
+BUFFER_SECONDS=10
+
+
+# ==============================
+# 🚨 DETECTION SETTINGS
+# ==============================
+# Enable/disable features
+DETECT_PHONE=true
+DETECT_BOOK=true
+DETECT_LOOKING_AWAY=true
+
+# Looking away sensitivity (lower = stricter)
+LOOK_THRESHOLD_LEFT=0.4
+LOOK_THRESHOLD_RIGHT=0.6
+LOOK_THRESHOLD_UP=0.4
+
+
+# ==============================
+# 📁 STORAGE PATHS
+# ==============================
+REPORTS_PATH=data/reports
+IMAGES_PATH=data/evidence/images
+VIDEOS_PATH=data/evidence/clips
+
+
+# ==============================
+# 🌐 FLASK CONFIG
+# ==============================
+SECRET_KEY=super_secret_key_123
+DEBUG=true
+
+
+# ==============================
+# 🧪 DEBUG OPTIONS
+# ==============================
+PRINT_VIOLATIONS=true
+SHOW_WARNINGS_ON_SCREEN=true

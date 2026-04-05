@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h3>📸 Evidence Image</h3>
+<img src="/{{ report.evidence_image }}" width="100%">
+
+<h3>🎥 Evidence Video</h3>
+<video width="100%" controls>
+    <source src="/{{ report.evidence_video }}">
+</video>
+
+<div class="header">📄 Report Detail</div>
+
+<div class="card" style="margin:auto; width:400px;">
+
+<p><b>Name:</b> {{report.name}}</p>
+<p><b>Roll:</b> {{report.roll_no}}</p>
+<p><b>Time:</b> {{report.time}}</p>
+<p><b>Violations:</b> {{report.violations}}</p>
+
+<p class="status {{report.status}}">{{report.status}}</p>
+
+<form method="post">
+    <button class="btn" name="action" value="Approved">✅ Approve</button>
+    <button class="btn" name="action" value="Rejected">❌ Reject</button>
+</form>
+
+</div>
+
+<br>
+<div style="text-align:center;">
+    <a class="btn" href="/reports">⬅ Back</a>
+</div>
+
+</body>
+</html>
