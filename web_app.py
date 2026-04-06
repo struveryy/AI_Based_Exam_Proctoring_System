@@ -57,7 +57,6 @@ def save_evidence(name):
         FPS,
         (w, h)
 )
-
         for f in frame_buffer:
             out.write(f)
 
