@@ -43,7 +43,7 @@ def save_evidence(name):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     img_path = f"data/evidence/images/{name}_{timestamp}.jpg"
-    video_path = f"data/evidence/clips/{name}_{timestamp}.avi"
+    video_path = f"data/evidence/clips/{name}_{timestamp}.mp4"
 
     if len(frame_buffer) > 0:
         # save image
@@ -52,11 +52,11 @@ def save_evidence(name):
         # save video
         h, w, _ = frame_buffer[0].shape
         out = cv2.VideoWriter(
-            video_path,
-            cv2.VideoWriter_fourcc(*'XVID'),
-            FPS,
-            (w, h)
-        )
+        video_path,
+        cv2.VideoWriter_fourcc(*'mp4v'),
+        FPS,
+        (w, h)
+)
 
         for f in frame_buffer:
             out.write(f)
